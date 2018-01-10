@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFp-YA-4fH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-Eg-ad6">
+                            <rect key="frame" x="8" y="28" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="jJl-9l-LB2"/>
+                                <constraint firstAttribute="width" constant="50" id="v5U-OO-oHz"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-j9-V9S">
+                            <rect key="frame" x="78" y="28" width="279" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="2Lg-0Q-eVC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黑龙江  理科  605分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvo-Mc-taF">
+                            <rect key="frame" x="78" y="58" width="287" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="rFu-73-59F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离2018年高考还有198天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZL-ZL-Gom">
+                            <rect key="frame" x="68" y="70" width="297" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="ydv-UI-fTO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oef-j9-V9S" firstAttribute="top" secondItem="SFp-YA-4fH" secondAttribute="topMargin" id="1oL-R5-Y2D"/>
+                        <constraint firstItem="bCC-Eg-ad6" firstAttribute="top" secondItem="SFp-YA-4fH" secondAttribute="topMargin" id="4y6-gz-ENl"/>
+                        <constraint firstAttribute="trailing" secondItem="qvo-Mc-taF" secondAttribute="trailing" constant="10" id="G2S-Fo-yUA"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="Oef-j9-V9S" secondAttribute="trailing" constant="10" id="PAE-iW-79F"/>
+                        <constraint firstItem="BZL-ZL-Gom" firstAttribute="leading" secondItem="bCC-Eg-ad6" secondAttribute="trailing" constant="10" id="RLb-kM-UJm"/>
+                        <constraint firstItem="qvo-Mc-taF" firstAttribute="leading" secondItem="bCC-Eg-ad6" secondAttribute="trailing" constant="20" id="fBB-HQ-D8F"/>
+                        <constraint firstItem="qvo-Mc-taF" firstAttribute="top" secondItem="Oef-j9-V9S" secondAttribute="bottom" constant="5" id="k3k-hy-AzZ"/>
+                        <constraint firstItem="bCC-Eg-ad6" firstAttribute="leading" secondItem="SFp-YA-4fH" secondAttribute="leadingMargin" id="kmh-1K-5Rs"/>
+                        <constraint firstAttribute="trailing" secondItem="BZL-ZL-Gom" secondAttribute="trailing" constant="10" id="sla-v1-Szx"/>
+                        <constraint firstAttribute="bottom" secondItem="BZL-ZL-Gom" secondAttribute="bottom" constant="5" id="u0T-cM-wmY"/>
+                        <constraint firstItem="Oef-j9-V9S" firstAttribute="leading" secondItem="bCC-Eg-ad6" secondAttribute="trailing" constant="20" id="y8P-lK-6GD"/>
+                        <constraint firstAttribute="height" constant="100" id="yAH-8v-eBU"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pdV-Kp-qZw">
+                    <rect key="frame" x="0.0" y="100" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yme-Ix-gBh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SFp-YA-4fH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6yF-Q4-hdP"/>
+                <constraint firstItem="SFp-YA-4fH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DhL-JN-k2n"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pdV-Kp-qZw" secondAttribute="trailing" id="Pvd-0Q-mKD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SFp-YA-4fH" secondAttribute="trailing" id="Rmm-Tc-cau"/>
+                <constraint firstItem="pdV-Kp-qZw" firstAttribute="top" secondItem="SFp-YA-4fH" secondAttribute="bottom" id="YeS-UC-FM6"/>
+                <constraint firstItem="pdV-Kp-qZw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bFa-kN-MfP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-274" y="23"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="touxiang.jpg" width="300" height="300"/>
+    </resources>
+</document>
