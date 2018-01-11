@@ -7,8 +7,10 @@
 //
 
 #import "LoginViewController.h"
+#import <SDAutoLayout.h>
+#import "RegisterViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController ()<UITextFieldDelegate>
 @property (nonatomic, strong) UITextField *userName;
 @property (nonatomic, strong) UITextField *password;
 @end
@@ -37,6 +39,7 @@
     self.userName = [[UITextField alloc] init];
     _userName.borderStyle = UITextBorderStyleRoundedRect;
     _userName.font = [UIFont systemFontOfSize:18];
+    _userName.delegate = self;
     _userName.placeholder = @"手机号/邮箱/准考证号";
     [self.view addSubview:_userName];
     
@@ -51,6 +54,7 @@
     self.password = [[UITextField alloc] init];
     _password.borderStyle = UITextBorderStyleRoundedRect;
     _password.font = [UIFont systemFontOfSize:18];
+    _password.delegate = self;
     _password.placeholder = @"密码";
     [self.view addSubview:_password];
     
@@ -68,7 +72,8 @@
     loginBtn.backgroundColor = [UIColor blueColor];
     [loginBtn setTintColor: [UIColor whiteColor]];
     [self.view addSubview:loginBtn];
-    
+    loginBtn.clipsToBounds = YES;
+    loginBtn.layer.cornerRadius = 5;
     [loginBtn addTarget:self action:@selector(loginBtnAction) forControlEvents:UIControlEventTouchUpInside];
 
     loginBtn.sd_layout
@@ -115,11 +120,32 @@
 }
 - (void)forgetBtnAction {
     NSLog(@"忘记密码");
+    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+    registerVC.title = @"找回密码";
+    [self.navigationController pushViewController:registerVC animated:YES];
 }
 
 - (void)registerBtnAction {
     NSLog(@"邮箱注册");
+    
+    
+    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+    registerVC.title = @"注册";
+    [self.navigationController pushViewController:registerVC animated:YES];
+    
+    
 }
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

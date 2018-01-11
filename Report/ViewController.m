@@ -18,22 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.title = @"测试";
-    self.navigationController.navigationBar.translucent = NO;
-    self.tabBarController.tabBar.translucent = NO;
+//    self.view.backgroundColor = [UIColor whiteColor];
+//
+//    self.title = @"测试";
+//    self.navigationController.navigationBar.translucent = NO;
+//    self.tabBarController.tabBar.translucent = NO;
     
     
 //    UIBarButtonItem *btn1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"mine-sun-icon"] style:UIBarButtonItemStyleDone target:self action:@selector(weixinPay)];
     
-    UIBarButtonItem *btn1 = [[UIBarButtonItem alloc] initWithTitle:@"微信支付" style:UIBarButtonItemStyleDone target:self action:@selector(weixinPay)];
-    
-    
-//    UIBarButtonItem *btn2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_coin_icon_click"] style:UIBarButtonItemStyleDone target:self action:@selector(btn2Action)];
-     UIBarButtonItem *btn2 = [[UIBarButtonItem alloc] initWithTitle:@"网络请求" style:UIBarButtonItemStyleDone target:self action:@selector(btn2Action)];
-    
-    self.navigationItem.rightBarButtonItems = @[btn1, btn2];
+//    UIBarButtonItem *btn1 = [[UIBarButtonItem alloc] initWithTitle:@"微信支付" style:UIBarButtonItemStyleDone target:self action:@selector(weixinPay)];
+//
+//
+////    UIBarButtonItem *btn2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_coin_icon_click"] style:UIBarButtonItemStyleDone target:self action:@selector(btn2Action)];
+//     UIBarButtonItem *btn2 = [[UIBarButtonItem alloc] initWithTitle:@"网络请求" style:UIBarButtonItemStyleDone target:self action:@selector(btn2Action)];
+//
+//    self.navigationItem.rightBarButtonItems = @[btn1, btn2];
     
     
     /*

@@ -15,6 +15,10 @@
 #import "ThreeViewController.h"
 
 
+#import "LoginViewController.h"
+
+
+
 @interface AppDelegate ()
 
 @end
@@ -28,7 +32,14 @@
 //    ViewController *vc = [[ViewController alloc] init];
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
 //    self.window.rootViewController = nav;
-         [self setTabbarController];
+//         [self setTabbarController];
+    
+    
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    self.window.rootViewController = nav;
+    
+    
     
     return YES;
 

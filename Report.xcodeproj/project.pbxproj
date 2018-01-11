@@ -50,6 +50,9 @@
 		0F8CAC911FC4159A00F0145B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CAC8F1FC4159A00F0145B /* SecondViewController.m */; };
 		0F8CAC921FC4159A00F0145B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8CAC901FC4159A00F0145B /* SecondViewController.xib */; };
 		0F8CAC941FC4190500F0145B /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F8CAC931FC4190500F0145B /* touxiang.jpg */; };
+		0FA3688C2005E9C100E992E6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA368882005E9C100E992E6 /* LoginViewController.m */; };
+		0FA3688D2005E9C100E992E6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA368892005E9C100E992E6 /* RegisterViewController.m */; };
+		0FA368902006023000E992E6 /* MarkMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3688F2006023000E992E6 /* MarkMessageViewController.m */; };
 		0FB2B4FF1FBD818D00EF4AC3 /* XWDAFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2B4FE1FBD818D00EF4AC3 /* XWDAFNManager.m */; };
 		0FB2B5031FBD838800EF4AC3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2B5021FBD838800EF4AC3 /* BaseViewController.m */; };
 		0FD07DE41FBEBA72007D6F6C /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DDC1FBEBA72007D6F6C /* WXUtil.mm */; };
@@ -144,6 +147,12 @@
 		0F8CAC8F1FC4159A00F0145B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0F8CAC901FC4159A00F0145B /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		0F8CAC931FC4190500F0145B /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
+		0FA368882005E9C100E992E6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0FA368892005E9C100E992E6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0FA3688A2005E9C100E992E6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0FA3688B2005E9C100E992E6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0FA3688E2006023000E992E6 /* MarkMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkMessageViewController.h; sourceTree = "<group>"; };
+		0FA3688F2006023000E992E6 /* MarkMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkMessageViewController.m; sourceTree = "<group>"; };
 		0FB2B4FD1FBD818C00EF4AC3 /* XWDAFNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDAFNManager.h; sourceTree = "<group>"; };
 		0FB2B4FE1FBD818D00EF4AC3 /* XWDAFNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDAFNManager.m; sourceTree = "<group>"; };
 		0FB2B5011FBD838800EF4AC3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -276,6 +285,7 @@
 		0F7FDA6D1FBD69C200002335 /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				0FA368842005E9C100E992E6 /* Login */,
 				0F3ADDFF1FC26CA10001636C /* Demo */,
 				0FD07DD71FBEB962007D6F6C /* Pay */,
 				0FB2B5001FBD836400EF4AC3 /* Base */,
@@ -333,6 +343,43 @@
 				0F8CAC7B1FC3EB8000F0145B /* ProtocolDelegate.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0FA368842005E9C100E992E6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0FA368852005E9C100E992E6 /* Model */,
+				0FA368862005E9C100E992E6 /* View */,
+				0FA368872005E9C100E992E6 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0FA368852005E9C100E992E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FA368862005E9C100E992E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FA368872005E9C100E992E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0FA3688A2005E9C100E992E6 /* LoginViewController.h */,
+				0FA368882005E9C100E992E6 /* LoginViewController.m */,
+				0FA3688B2005E9C100E992E6 /* RegisterViewController.h */,
+				0FA368892005E9C100E992E6 /* RegisterViewController.m */,
+				0FA3688E2006023000E992E6 /* MarkMessageViewController.h */,
+				0FA3688F2006023000E992E6 /* MarkMessageViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		0FB2B4FC1FBD816F00EF4AC3 /* Networking */ = {
@@ -721,11 +768,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD07DE51FBEBA72007D6F6C /* ApiXml.mm in Sources */,
+				0FA3688C2005E9C100E992E6 /* LoginViewController.m in Sources */,
 				0F7FDAAF1FBD6A0E00002335 /* UIViewController+BarButton.m in Sources */,
+				0FA368902006023000E992E6 /* MarkMessageViewController.m in Sources */,
 				0FD07DE41FBEBA72007D6F6C /* WXUtil.mm in Sources */,
 				0FB2B5031FBD838800EF4AC3 /* BaseViewController.m in Sources */,
 				0F7FDA731FBD69C300002335 /* ViewController.m in Sources */,
 				0F7FDAAD1FBD6A0E00002335 /* UIBarButtonItem+SXCreate.m in Sources */,
+				0FA3688D2005E9C100E992E6 /* RegisterViewController.m in Sources */,
 				0F7FDAAC1FBD6A0E00002335 /* UINavigation+SXFixSpace.m in Sources */,
 				0F8CAC881FC4085100F0145B /* ThreeCollectionViewCell.m in Sources */,
 				0F8CAC911FC4159A00F0145B /* SecondViewController.m in Sources */,
