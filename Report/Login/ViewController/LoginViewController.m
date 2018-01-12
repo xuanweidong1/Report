@@ -9,6 +9,17 @@
 #import "LoginViewController.h"
 #import <SDAutoLayout.h>
 #import "RegisterViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThreeViewController.h"
+
+#import "SeaElectionViewController.h"
+#import "CollectionViewController.h"
+#import "IntelligenceViewController.h"
+#import "ExpertViewController.h"
+#import "MineViewController.h"
+
+
 
 @interface LoginViewController ()<UITextFieldDelegate>
 @property (nonatomic, strong) UITextField *userName;
@@ -117,7 +128,70 @@
 
 - (void)loginBtnAction {
     NSLog(@"登录");
+    [self setTabbarController];
 }
+
+- (void)setTabbarController {
+    //1.创建标签控制器
+    UITabBarController *tab = [[UITabBarController alloc]init];
+    
+    //2.创建相应的子控制器（viewcontroller）
+    
+    SeaElectionViewController *seaVC = [SeaElectionViewController new];
+    [self addChildVc:seaVC title:@"海选院校" image:@"搜索" selectedImage:@""];
+    UINavigationController *seaNC = [[UINavigationController alloc] initWithRootViewController:seaVC];
+    
+    CollectionViewController *collVC = [CollectionViewController new];
+    [self addChildVc:collVC title:@"志愿收藏" image:@"收藏" selectedImage:@""];
+    
+    UINavigationController *collNC = [[UINavigationController alloc]initWithRootViewController:collVC];
+    
+    
+    IntelligenceViewController *intVC = [IntelligenceViewController new];
+    [self addChildVc:intVC title:@"竞争情报" image:@"情报" selectedImage:@""];
+    
+    UINavigationController *intNC = [[UINavigationController alloc]initWithRootViewController:intVC];
+    
+    
+    ExpertViewController *expVC = [[ExpertViewController alloc] init];
+    [self addChildVc:expVC title:@"专家咨询" image:@"专家" selectedImage:@""];
+    UINavigationController *expNC = [[UINavigationController alloc]initWithRootViewController:expVC];
+    
+    MineViewController *minVC = [[MineViewController alloc] init];
+    [self addChildVc:minVC title:@"个人中心" image:@"个人中心" selectedImage:@""];
+    UINavigationController *minNC = [[UINavigationController alloc]initWithRootViewController:minVC];
+    
+    
+    
+    //3.添加到控制器
+    //特别注意：管理一组的控制器(最多显示五个,多余五个的话,包括第五个全部在更多模块里面,并且可以通过拖拽方式进行顺序编辑);
+    NSArray *array = @[seaNC,collNC,intNC, expNC, minNC];
+    tab.viewControllers = array;
+    // self.window.rootViewController = tab;
+    [UIApplication sharedApplication].delegate.window.rootViewController = tab;
+    
+}
+
+- (void)addChildVc:(UIViewController *)childVc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
+{
+    //设置标题
+    childVc.tabBarItem.title = title;
+    childVc.tabBarItem.image = [[UIImage imageNamed:image]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //需要设置照片的模式，用照片原图，默认是蓝色的
+    childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //创建修改字体颜色的字典，同时可以设置字体的内边距；
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
+    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor blueColor];
+    [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    [childVc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
+}
+
+
+
 - (void)forgetBtnAction {
     NSLog(@"忘记密码");
     RegisterViewController *registerVC = [[RegisterViewController alloc] init];

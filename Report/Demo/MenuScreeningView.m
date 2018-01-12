@@ -40,7 +40,7 @@
         
         self.oneLinkageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.oneLinkageButton.frame = CGRectMake(0, 0, kWidth/3, 36);
-        [self setUpButton:self.oneLinkageButton withText:@"地区"];
+        [self setUpButton:self.oneLinkageButton withText:@"批次"];
         
         self.oneLinkageDropMenu = [[DropMenuView alloc] init];
         self.oneLinkageDropMenu.arrowView = self.oneLinkageButton.imageView;
@@ -50,7 +50,7 @@
         
         self.twoLinkageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.twoLinkageButton.frame = CGRectMake(kWidth/3, 0, kWidth/3, 36);
-        [self setUpButton:self.twoLinkageButton withText:@"类别"];
+        [self setUpButton:self.twoLinkageButton withText:@"院校类型"];
         
         self.twoLinkageDropMenu = [[DropMenuView alloc] init];
         self.twoLinkageDropMenu.arrowView = self.twoLinkageButton.imageView;
@@ -60,7 +60,7 @@
         
         self.threeLinkageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.threeLinkageButton.frame = CGRectMake(2 * kWidth/3, 0,  kWidth/3, 36);
-        [self setUpButton:self.threeLinkageButton withText:@"专业"];
+        [self setUpButton:self.threeLinkageButton withText:@"地区"];
         
         self.threeLinkageDropMenu = [[DropMenuView alloc] init];
         self.threeLinkageDropMenu.arrowView = self.threeLinkageButton.imageView;

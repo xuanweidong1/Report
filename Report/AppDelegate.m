@@ -72,7 +72,8 @@
  //特别注意：管理一组的控制器(最多显示五个,多余五个的话,包括第五个全部在更多模块里面,并且可以通过拖拽方式进行顺序编辑);
  NSArray *array = @[firstNC,threeNC,secondNC];
  tab.viewControllers = array;
- self.window.rootViewController = tab;
+// self.window.rootViewController = tab;
+[UIApplication sharedApplication].delegate.window.rootViewController = tab;
  
  }
 

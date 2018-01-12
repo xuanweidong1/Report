@@ -96,7 +96,7 @@
         
         // 初始位置 设置
         CGFloat x = 0.f;
-        CGFloat y = view.frame.origin.y + view.frame.size.height + 60;//xuan 改
+        CGFloat y = view.frame.origin.y + view.frame.size.height;
         CGFloat w = kWidth;
         
         CGFloat h = kHeight - y;

@@ -55,6 +55,11 @@
 		0FA368902006023000E992E6 /* MarkMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA3688F2006023000E992E6 /* MarkMessageViewController.m */; };
 		0FB2B4FF1FBD818D00EF4AC3 /* XWDAFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2B4FE1FBD818D00EF4AC3 /* XWDAFNManager.m */; };
 		0FB2B5031FBD838800EF4AC3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2B5021FBD838800EF4AC3 /* BaseViewController.m */; };
+		0FC2F8F1200738DD00502845 /* SeaElectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2F8F0200738DD00502845 /* SeaElectionViewController.m */; };
+		0FC2F8F8200739CD00502845 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2F8F7200739CD00502845 /* CollectionViewController.m */; };
+		0FC2F8FF20073A2B00502845 /* IntelligenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2F8FE20073A2B00502845 /* IntelligenceViewController.m */; };
+		0FC2F90620073A7C00502845 /* ExpertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2F90520073A7C00502845 /* ExpertViewController.m */; };
+		0FC2F90D20073AA800502845 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2F90C20073AA800502845 /* MineViewController.m */; };
 		0FD07DE41FBEBA72007D6F6C /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DDC1FBEBA72007D6F6C /* WXUtil.mm */; };
 		0FD07DE51FBEBA72007D6F6C /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DE01FBEBA72007D6F6C /* ApiXml.mm */; };
 		0FD07DE61FBEBA72007D6F6C /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DE11FBEBA72007D6F6C /* payRequsestHandler.mm */; };
@@ -158,6 +163,16 @@
 		0FB2B5011FBD838800EF4AC3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0FB2B5021FBD838800EF4AC3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		0FB2B5051FBD897B00EF4AC3 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0FC2F8EF200738DD00502845 /* SeaElectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeaElectionViewController.h; sourceTree = "<group>"; };
+		0FC2F8F0200738DD00502845 /* SeaElectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeaElectionViewController.m; sourceTree = "<group>"; };
+		0FC2F8F6200739CD00502845 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		0FC2F8F7200739CD00502845 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		0FC2F8FD20073A2B00502845 /* IntelligenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelligenceViewController.h; sourceTree = "<group>"; };
+		0FC2F8FE20073A2B00502845 /* IntelligenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelligenceViewController.m; sourceTree = "<group>"; };
+		0FC2F90420073A7C00502845 /* ExpertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpertViewController.h; sourceTree = "<group>"; };
+		0FC2F90520073A7C00502845 /* ExpertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpertViewController.m; sourceTree = "<group>"; };
+		0FC2F90B20073AA800502845 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		0FC2F90C20073AA800502845 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		0FD07DD61FBE756C007D6F6C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0FD07DDC1FBEBA72007D6F6C /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
 		0FD07DDD1FBEBA72007D6F6C /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
@@ -285,6 +300,11 @@
 		0F7FDA6D1FBD69C200002335 /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				0FC2F90720073A8000502845 /* Mine */,
+				0FC2F90020073A3100502845 /* Expert */,
+				0FC2F8F9200739D800502845 /* Intelligence */,
+				0FC2F8F2200738EC00502845 /* Collection */,
+				0FC2F8EB2007356000502845 /* SeaElection */,
 				0FA368842005E9C100E992E6 /* Login */,
 				0F3ADDFF1FC26CA10001636C /* Demo */,
 				0FD07DD71FBEB962007D6F6C /* Pay */,
@@ -404,6 +424,171 @@
 				0FD07DD61FBE756C007D6F6C /* PrefixHeader.pch */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		0FC2F8EB2007356000502845 /* SeaElection */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8EE200738BF00502845 /* Controller */,
+				0FC2F8ED200738B700502845 /* View */,
+				0FC2F8EC2007389900502845 /* Model */,
+			);
+			path = SeaElection;
+			sourceTree = "<group>";
+		};
+		0FC2F8EC2007389900502845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC2F8ED200738B700502845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC2F8EE200738BF00502845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8EF200738DD00502845 /* SeaElectionViewController.h */,
+				0FC2F8F0200738DD00502845 /* SeaElectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FC2F8F2200738EC00502845 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8F5200739A900502845 /* Controller */,
+				0FC2F8F4200739A300502845 /* View */,
+				0FC2F8F32007398B00502845 /* Model */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		0FC2F8F32007398B00502845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC2F8F4200739A300502845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC2F8F5200739A900502845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8F6200739CD00502845 /* CollectionViewController.h */,
+				0FC2F8F7200739CD00502845 /* CollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FC2F8F9200739D800502845 /* Intelligence */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8FC20073A1700502845 /* Controller */,
+				0FC2F8FB20073A0C00502845 /* View */,
+				0FC2F8FA20073A0200502845 /* Model */,
+			);
+			path = Intelligence;
+			sourceTree = "<group>";
+		};
+		0FC2F8FA20073A0200502845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC2F8FB20073A0C00502845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC2F8FC20073A1700502845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F8FD20073A2B00502845 /* IntelligenceViewController.h */,
+				0FC2F8FE20073A2B00502845 /* IntelligenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FC2F90020073A3100502845 /* Expert */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F90320073A6C00502845 /* Controller */,
+				0FC2F90220073A6400502845 /* View */,
+				0FC2F90120073A5800502845 /* Model */,
+			);
+			path = Expert;
+			sourceTree = "<group>";
+		};
+		0FC2F90120073A5800502845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC2F90220073A6400502845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC2F90320073A6C00502845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F90420073A7C00502845 /* ExpertViewController.h */,
+				0FC2F90520073A7C00502845 /* ExpertViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FC2F90720073A8000502845 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F90A20073A9700502845 /* Controller */,
+				0FC2F90920073A9200502845 /* View */,
+				0FC2F90820073A8A00502845 /* Model */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0FC2F90820073A8A00502845 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC2F90920073A9200502845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC2F90A20073A9700502845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2F90B20073AA800502845 /* MineViewController.h */,
+				0FC2F90C20073AA800502845 /* MineViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		0FD07DD71FBEB962007D6F6C /* Pay */ = {
@@ -784,12 +969,17 @@
 				0F3ADE271FC29C220001636C /* SchoolModel.m in Sources */,
 				0FD07DE71FBEBA72007D6F6C /* WXApiManager.m in Sources */,
 				0F8CAC731FC3C9FE00F0145B /* MenuScreeningView.m in Sources */,
+				0FC2F8F8200739CD00502845 /* CollectionViewController.m in Sources */,
 				0F7FDAAE1FBD6A0E00002335 /* NSObject+SXRuntime.m in Sources */,
 				0F3ADE241FC27C1F0001636C /* DropMenuView.m in Sources */,
 				0F7FDA7E1FBD69C300002335 /* main.m in Sources */,
 				0FD07DE61FBEBA72007D6F6C /* payRequsestHandler.mm in Sources */,
+				0FC2F8F1200738DD00502845 /* SeaElectionViewController.m in Sources */,
+				0FC2F90620073A7C00502845 /* ExpertViewController.m in Sources */,
 				0F7FDA701FBD69C200002335 /* AppDelegate.m in Sources */,
 				0F3ADE081FC26CDE0001636C /* ThreeViewController.m in Sources */,
+				0FC2F8FF20073A2B00502845 /* IntelligenceViewController.m in Sources */,
+				0FC2F90D20073AA800502845 /* MineViewController.m in Sources */,
 				0F7FDAAB1FBD6A0E00002335 /* UINavigationController+SXFullScreen.m in Sources */,
 				0FB2B4FF1FBD818D00EF4AC3 /* XWDAFNManager.m in Sources */,
 			);
