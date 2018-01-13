@@ -74,7 +74,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     SchoolModel *schoolModel = self.sourceArray[indexPath.row];
-    cell.textLabel.text = schoolModel.tips;
+//    cell.textLabel.text = schoolModel.tips;
     
     return cell;
 }

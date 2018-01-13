@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface IntelligenceViewController : ViewController
+@interface IntelligenceViewController : ViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

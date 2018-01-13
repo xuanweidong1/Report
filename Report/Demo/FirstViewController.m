@@ -57,8 +57,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    SchoolModel *schoolModel = self.sourceArray[indexPath.row];
-    cell.textLabel.text = schoolModel.uni_name;
+//    SchoolModel *schoolModel = self.sourceArray[indexPath.row];
+//    cell.textLabel.text = schoolModel.uni_name;
     
     return cell;
 }

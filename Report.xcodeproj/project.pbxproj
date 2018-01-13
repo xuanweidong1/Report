@@ -21,7 +21,6 @@
 		0F3ADE201FC26DF50001636C /* icon_home_tab_two_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F3ADE141FC26DF50001636C /* icon_home_tab_two_gray@3x.png */; };
 		0F3ADE211FC26DF50001636C /* icon_home_tab_three_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F3ADE151FC26DF50001636C /* icon_home_tab_three_blue@3x.png */; };
 		0F3ADE241FC27C1F0001636C /* DropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3ADE221FC27C1F0001636C /* DropMenuView.m */; };
-		0F3ADE271FC29C220001636C /* SchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3ADE261FC29C220001636C /* SchoolModel.m */; };
 		0F7FDA701FBD69C200002335 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FDA6F1FBD69C200002335 /* AppDelegate.m */; };
 		0F7FDA731FBD69C300002335 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FDA721FBD69C300002335 /* ViewController.m */; };
 		0F7FDA761FBD69C300002335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7FDA741FBD69C300002335 /* Main.storyboard */; };
@@ -66,6 +65,11 @@
 		0FD07DE71FBEBA72007D6F6C /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DE21FBEBA72007D6F6C /* WXApiManager.m */; };
 		0FD07DEA1FBEBA82007D6F6C /* WTPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD07DE81FBEBA82007D6F6C /* WTPayManager.m */; };
 		5171484FD7C2EDA9317E9C47 /* libPods-Report.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A270AC4A486C73D64EB38B9 /* libPods-Report.a */; };
+		52CA085720085AB600172E2A /* studentPlan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52CA085620085AB600172E2A /* studentPlan.plist */; };
+		52CA085C2008812A00172E2A /* SchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA085B2008812A00172E2A /* SchoolModel.m */; };
+		52CA0860200882FD00172E2A /* RankingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA085E200882FD00172E2A /* RankingTableViewCell.m */; };
+		52CA0861200882FD00172E2A /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CA085F200882FD00172E2A /* RankingTableViewCell.xib */; };
+		52CA086420088DAD00172E2A /* CompetitiveIntelligence.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA086320088DAD00172E2A /* CompetitiveIntelligence.m */; };
 		CA3DA6890AB4D311BC350E64 /* libPods-ReportTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7860D9C9D494770E61335A /* libPods-ReportTests.a */; };
 		E12545EFE68ED8EC43E019EE /* libPods-ReportUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5650BD4C65AC5A34017E230A /* libPods-ReportUITests.a */; };
 /* End PBXBuildFile section */
@@ -104,8 +108,6 @@
 		0F3ADE151FC26DF50001636C /* icon_home_tab_three_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_tab_three_blue@3x.png"; sourceTree = "<group>"; };
 		0F3ADE221FC27C1F0001636C /* DropMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropMenuView.m; sourceTree = "<group>"; };
 		0F3ADE231FC27C1F0001636C /* DropMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropMenuView.h; sourceTree = "<group>"; };
-		0F3ADE251FC29C220001636C /* SchoolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoolModel.h; sourceTree = "<group>"; };
-		0F3ADE261FC29C220001636C /* SchoolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolModel.m; sourceTree = "<group>"; };
 		0F7FDA6B1FBD69C200002335 /* Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Report.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7FDA6E1FBD69C200002335 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F7FDA6F1FBD69C200002335 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -187,6 +189,14 @@
 		0FD07DEB1FBEBAAE007D6F6C /* WTPayKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPayKeys.h; sourceTree = "<group>"; };
 		1C59C34CC96095BE605FE49A /* Pods-Report.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Report.release.xcconfig"; path = "Pods/Target Support Files/Pods-Report/Pods-Report.release.xcconfig"; sourceTree = "<group>"; };
 		378A83DEC3AD52704FCAED03 /* Pods-Report.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Report.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Report/Pods-Report.debug.xcconfig"; sourceTree = "<group>"; };
+		52CA085620085AB600172E2A /* studentPlan.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = studentPlan.plist; sourceTree = "<group>"; };
+		52CA085A2008812A00172E2A /* SchoolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchoolModel.h; sourceTree = "<group>"; };
+		52CA085B2008812A00172E2A /* SchoolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchoolModel.m; sourceTree = "<group>"; };
+		52CA085D200882FD00172E2A /* RankingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankingTableViewCell.h; sourceTree = "<group>"; };
+		52CA085E200882FD00172E2A /* RankingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankingTableViewCell.m; sourceTree = "<group>"; };
+		52CA085F200882FD00172E2A /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
+		52CA086220088DAD00172E2A /* CompetitiveIntelligence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompetitiveIntelligence.h; sourceTree = "<group>"; };
+		52CA086320088DAD00172E2A /* CompetitiveIntelligence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompetitiveIntelligence.m; sourceTree = "<group>"; };
 		5650BD4C65AC5A34017E230A /* libPods-ReportUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReportUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E3056F4E8AAF9491847A8F /* Pods-ReportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReportTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReportTests/Pods-ReportTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A270AC4A486C73D64EB38B9 /* libPods-Report.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Report.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,8 +244,6 @@
 				0F8CAC851FC4085100F0145B /* ThreeCollectionViewCell.h */,
 				0F8CAC861FC4085100F0145B /* ThreeCollectionViewCell.m */,
 				0F8CAC871FC4085100F0145B /* ThreeCollectionViewCell.xib */,
-				0F3ADE251FC29C220001636C /* SchoolModel.h */,
-				0F3ADE261FC29C220001636C /* SchoolModel.m */,
 				0F8CAC711FC3C9FE00F0145B /* MenuScreeningView.h */,
 				0F8CAC721FC3C9FE00F0145B /* MenuScreeningView.m */,
 				0F8CAC681FC3BCAF00F0145B /* FirstViewController.h */,
@@ -495,25 +503,11 @@
 		0FC2F8F9200739D800502845 /* Intelligence */ = {
 			isa = PBXGroup;
 			children = (
+				52CA08592008617300172E2A /* View */,
+				52CA085520085A8800172E2A /* Model */,
 				0FC2F8FC20073A1700502845 /* Controller */,
-				0FC2F8FB20073A0C00502845 /* View */,
-				0FC2F8FA20073A0200502845 /* Model */,
 			);
 			path = Intelligence;
-			sourceTree = "<group>";
-		};
-		0FC2F8FA20073A0200502845 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0FC2F8FB20073A0C00502845 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0FC2F8FC20073A1700502845 /* Controller */ = {
@@ -615,6 +609,28 @@
 				0FD07DE31FBEBA72007D6F6C /* WXUtil.h */,
 			);
 			path = weixinPay;
+			sourceTree = "<group>";
+		};
+		52CA085520085A8800172E2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52CA085620085AB600172E2A /* studentPlan.plist */,
+				52CA085A2008812A00172E2A /* SchoolModel.h */,
+				52CA085B2008812A00172E2A /* SchoolModel.m */,
+				52CA086220088DAD00172E2A /* CompetitiveIntelligence.h */,
+				52CA086320088DAD00172E2A /* CompetitiveIntelligence.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52CA08592008617300172E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52CA085D200882FD00172E2A /* RankingTableViewCell.h */,
+				52CA085E200882FD00172E2A /* RankingTableViewCell.m */,
+				52CA085F200882FD00172E2A /* RankingTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D5FF801CF7BCDC9F39521C49 /* Pods */ = {
@@ -765,6 +781,7 @@
 				0F3ADE201FC26DF50001636C /* icon_home_tab_two_gray@3x.png in Resources */,
 				0F3ADE1A1FC26DF50001636C /* icon_home_tab_two_blue@3x.png in Resources */,
 				0F3ADE191FC26DF50001636C /* icon_home_tab_one_blue@2x.png in Resources */,
+				52CA085720085AB600172E2A /* studentPlan.plist in Resources */,
 				0F3ADE181FC26DF50001636C /* icon_home_tab_one_blue@3x.png in Resources */,
 				0F7FDA7B1FBD69C300002335 /* LaunchScreen.storyboard in Resources */,
 				0F3ADE1B1FC26DF50001636C /* icon_home_tab_three_gray@3x.png in Resources */,
@@ -772,6 +789,7 @@
 				0F8CAC921FC4159A00F0145B /* SecondViewController.xib in Resources */,
 				0F8CAC781FC3CAD900F0145B /* sorts.plist in Resources */,
 				0F3ADE1C1FC26DF50001636C /* icon_home_tab_three_blue@2x.png in Resources */,
+				52CA0861200882FD00172E2A /* RankingTableViewCell.xib in Resources */,
 				0F8CAC7D1FC3F62800F0145B /* categories_school.plist in Resources */,
 				0F3ADE211FC26DF50001636C /* icon_home_tab_three_blue@3x.png in Resources */,
 				0F3ADE1E1FC26DF50001636C /* icon_home_tab_one_gray@3x.png in Resources */,
@@ -966,7 +984,7 @@
 				0F8CAC911FC4159A00F0145B /* SecondViewController.m in Sources */,
 				0F8CAC6B1FC3BCAF00F0145B /* FirstViewController.m in Sources */,
 				0FD07DEA1FBEBA82007D6F6C /* WTPayManager.m in Sources */,
-				0F3ADE271FC29C220001636C /* SchoolModel.m in Sources */,
+				52CA085C2008812A00172E2A /* SchoolModel.m in Sources */,
 				0FD07DE71FBEBA72007D6F6C /* WXApiManager.m in Sources */,
 				0F8CAC731FC3C9FE00F0145B /* MenuScreeningView.m in Sources */,
 				0FC2F8F8200739CD00502845 /* CollectionViewController.m in Sources */,
@@ -980,7 +998,9 @@
 				0F3ADE081FC26CDE0001636C /* ThreeViewController.m in Sources */,
 				0FC2F8FF20073A2B00502845 /* IntelligenceViewController.m in Sources */,
 				0FC2F90D20073AA800502845 /* MineViewController.m in Sources */,
+				52CA086420088DAD00172E2A /* CompetitiveIntelligence.m in Sources */,
 				0F7FDAAB1FBD6A0E00002335 /* UINavigationController+SXFullScreen.m in Sources */,
+				52CA0860200882FD00172E2A /* RankingTableViewCell.m in Sources */,
 				0FB2B4FF1FBD818D00EF4AC3 /* XWDAFNManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1149,6 +1169,7 @@
 				DEVELOPMENT_TEAM = VBWX8EN5QT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Report/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weidong.Report;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1166,6 +1187,7 @@
 				DEVELOPMENT_TEAM = VBWX8EN5QT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Report/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weidong.Report;
 				PRODUCT_NAME = "$(TARGET_NAME)";
