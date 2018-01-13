@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1DCB42200884DE0073AA47 /* OpenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1DCB40200884DE0073AA47 /* OpenTest.m */; };
 		0F3ADE081FC26CDE0001636C /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3ADE071FC26CDE0001636C /* ThreeViewController.m */; };
 		0F3ADE161FC26DF50001636C /* icon_home_tab_three_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F3ADE0A1FC26DF50001636C /* icon_home_tab_three_gray@2x.png */; };
 		0F3ADE171FC26DF50001636C /* icon_home_tab_two_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F3ADE0B1FC26DF50001636C /* icon_home_tab_two_blue@2x.png */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1DCB40200884DE0073AA47 /* OpenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTest.m; sourceTree = "<group>"; };
+		0F1DCB41200884DE0073AA47 /* OpenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTest.h; sourceTree = "<group>"; };
 		0F3ADE061FC26CDE0001636C /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		0F3ADE071FC26CDE0001636C /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		0F3ADE0A1FC26DF50001636C /* icon_home_tab_three_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_tab_three_gray@2x.png"; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 		0FC2F8EC2007389900502845 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0F1DCB41200884DE0073AA47 /* OpenTest.h */,
+				0F1DCB40200884DE0073AA47 /* OpenTest.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -976,6 +981,7 @@
 				0FD07DE61FBEBA72007D6F6C /* payRequsestHandler.mm in Sources */,
 				0FC2F8F1200738DD00502845 /* SeaElectionViewController.m in Sources */,
 				0FC2F90620073A7C00502845 /* ExpertViewController.m in Sources */,
+				0F1DCB42200884DE0073AA47 /* OpenTest.m in Sources */,
 				0F7FDA701FBD69C200002335 /* AppDelegate.m in Sources */,
 				0F3ADE081FC26CDE0001636C /* ThreeViewController.m in Sources */,
 				0FC2F8FF20073A2B00502845 /* IntelligenceViewController.m in Sources */,
@@ -1149,6 +1155,7 @@
 				DEVELOPMENT_TEAM = VBWX8EN5QT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Report/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weidong.Report;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1166,6 +1173,7 @@
 				DEVELOPMENT_TEAM = VBWX8EN5QT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Report/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weidong.Report;
 				PRODUCT_NAME = "$(TARGET_NAME)";

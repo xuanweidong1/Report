@@ -28,12 +28,23 @@
 
 @implementation LoginViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;//用来隐藏；
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
     UILabel *titleL = [[UILabel alloc] init];
     titleL.text = @"龙考志愿";
     titleL.textAlignment = NSTextAlignmentCenter;
@@ -42,7 +53,7 @@
     [self.view addSubview:titleL];
     titleL.sd_layout
     .leftSpaceToView(self.view, 20)
-    .topSpaceToView(self.view, 140)
+    .topSpaceToView(self.view, rectStatus.size.height + 49 + 20)
     .rightSpaceToView(self.view, 20)
     .heightIs(40);
     
@@ -57,7 +68,7 @@
     _userName.sd_layout
     .leftSpaceToView(self.view, 36)
     .rightSpaceToView(self.view, 36)
-    .topSpaceToView(titleL, 100)
+    .topSpaceToView(titleL, 40)
     .heightIs(40);
     
     
