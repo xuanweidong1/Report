@@ -10,6 +10,7 @@ pod 'RMMapper', '~> 1.1.5'
 pod 'SDWebImage', '~> 4.2.2'
 pod 'WechatOpenSDK'
 pod 'SDAutoLayout', '~> 2.2.0'
+pod 'MJExtension', '~> 3.0.13'
   # Pods for Report
 
   target 'ReportTests' do
